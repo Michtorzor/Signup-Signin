@@ -1,112 +1,137 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap');
 
 * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        font-family: "poppin", sans-serif
-    }
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
 
 body {
     background-color: skyblue;
     display: flex;
-    justify-self: center;
+    justify-content: center;
     align-items: center;
     min-height: 100vh;
-    
 }
 
-/* div {
-    border: 1px solid red;
-} */
-
-#form-box {
-    border: 1px solid yellow;
-}
-
-#form-container {
-    border: 1px solid green;
-}
-
-.form-container {
+/* Works for both pages */
+.form-container,
+.login-container {
     border: 1px solid black;
     background-color: white;
     width: 100%;
-    max-width: 600px;
+    max-width: 400px;
     border-radius: 20px;
     padding: 40px;
-    box-shadow: 2px 4px 10px brown;
+    box-shadow: 2px 8px 20px brown;
 }
 
-h1{
+/* Title */
+h1 {
     color: black;
     font-size: 60;
     font-weight: 900;
     margin-bottom: 5px;
 }
 
-.subtitle {
+/* Subtitle / paragraph under title */
+.subtitle,
+.login-container p,
+.form-container > p {
     color: green;
     font-size: 18px;
     margin-bottom: 30px;
 }
 
+/* Input groups */
 .input-group {
-    border: 1px ;
+    border: 1px;
     margin-bottom: 25px;
 }
 
 .input-group label {
     display: block;
     font-size: 16px;
-    color: blueviolet;
     font-weight: 500;
+    color: blueviolet;
     margin-bottom: 6px;
 }
 
 .input-group input {
     width: 100%;
     padding: 12px 15px;
+    border: 1px solid grey;
     border-radius: 8px;
-    outline: none;
     font-size: 15px;
-    border: 1px solid gray;
+    outline: none;
 }
-.signup-btn {
+
+.input-group input:focus {
+    border-color: blue;
+}
+
+/* Buttons */
+.signup-btn,
+.Signin-btn,
+button[type="submit"] {
     width: 100%;
     padding: 13px;
     background-color: blue;
+    color: white;
     border: none;
     border-radius: 8px;
-    color: white;
-    text-transform: uppercase;
     font-size: 18px;
     font-weight: 600;
     cursor: pointer;
+    text-transform: capitalize;
 }
 
-.signup-btn:hover {
+.signup-btn:hover,
+.Signin-btn:hover,
+button[type="submit"]:hover {
     background-color: blueviolet;
 }
 
+/* Switch text (Already have account? / Don't have account?) */
 .switch-text {
     text-align: center;
     margin-top: 25px;
-    font-size: 14px;
-    color: green;
-
+    font-size: 15px;
+    color:green;
 }
 
-.switch-link {
+.switch-text a,
+.switch-link,
+.sw-link {
+    color: blue;
     text-decoration: none;
     font-weight: 600;
-    cursor: pointer;
 }
 
-.switch-link:hover {
+.input-group{
+    margin-bottom: 22px;
+    position: relative;
+}
+
+.Forget-link {
+    display: block;
+    text-align: right;
+    margin-top: 5px;
+    font-size: 15px;
+    color: blue;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.Forget-link:hover {
     text-decoration: underline;
     color: red;
 }
 
-
-
+.switch-text a:hover,
+.switch-link:hover,
+.sw-link:hover {
+    text-decoration: underline;
+    color: red;
+}
