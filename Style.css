@@ -135,3 +135,63 @@ button[type="submit"]:hover {
     text-decoration: underline;
     color: red;
 }
+
+
+h1 {
+    color: black;
+    font-size: 20;
+    font-weight: 900;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+h2 {
+    color:green;
+    font-size: 20px;
+    font-weight: 900;
+    text-align: center;
+}
+
+.subtitle{
+    color: green;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.social-btn{
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 12px; 
+    justify-content: center;
+    justify-items: center;  
+}
+
+.social-btn img{
+    width: 20px;
+    height: 20px;
+    gap: 10px;
+    align-items: center;
+}
+
+.divider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+    width: 100%;
+}
+
+.divider hr {
+    border: none;
+    border-top: 1px solid black;
+    height: 1px;
+}
+
+.divider-span {
+    font-size: 14px;
+    color:green;
+    font-weight: bolder;
+    margin: 0 10px;
+}
